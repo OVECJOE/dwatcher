@@ -1,0 +1,48 @@
+{
+  "name": "@dwatcher/core",
+  "version": "1.0.0",
+  "description": "Lightweight, performant Node.js file watcher with intelligent debouncing - zero dependencies alternative to nodemon",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "dwatcher": "bin/dwatcher.js"
+  },
+  "scripts": {
+    "test": "node test/dwatcher.test.js",
+    "example": "node bin/dwatcher.js node examples/server.js --verbose"
+  },
+  "keywords": [
+    "nodemon",
+    "file-watcher",
+    "auto-restart",
+    "development",
+    "nodejs",
+    "zero-dependencies",
+    "debounce",
+    "hot-reload"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OVECJOE/dwatcher.git"
+  },
+  "author": "OVECJOE <vohachor@gmail.com>",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "src/",
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ],
+  "bugs": {
+    "url": "https://github.com/OVECJOE/dwatcher/issues"
+  },
+  "homepage": "https://github.com/OVECJOE/dwatcher#readme",
+  "exports": {
+    ".": {
+      "import": "./src/index.js"
+    }
+  }
+}
