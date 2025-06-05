@@ -1,6 +1,6 @@
 {
   "name": "@dwatcher/core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight, performant Node.js file watcher with intelligent debouncing - zero dependencies alternative to nodemon",
   "main": "src/index.js",
   "type": "module",

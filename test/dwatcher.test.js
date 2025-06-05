@@ -1,4 +1,4 @@
-import { writeFile, unlink, mkdir, rmdir } from 'fs/promises';
+import { writeFile, unlink, mkdir, rm, rmdir } from 'fs/promises';
 import { join } from 'path';
 import { dwatcher } from '../src/index.js';
 
@@ -58,7 +58,7 @@ const testDir = join(process.cwd(), 'test-temp');
 // Clean up function
 async function cleanup() {
   try {
-    await rmdir(testDir, { recursive: true });
+    await rm(testDir, { recursive: true });
   } catch (err) {
     // Ignore cleanup errors
   }
