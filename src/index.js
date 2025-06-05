@@ -200,7 +200,7 @@ async function setupWatchers(directories, options, command, args) {
                 const relativePath = fullPath.replace(process.cwd() + '/', '');
 
                 // Check ignore patterns and extensions
-                if (shouldIgnore(relativePath, options.ignorePatterns)) returns;
+                if (shouldIgnore(relativePath, options.ignorePatterns)) return;
                 if (!shouldWatch(relativePath, options.watchExtensions)) return;
 
                 handleFileChange(relativePath, eventType, options, command, args);
